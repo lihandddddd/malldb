@@ -1,0 +1,28 @@
+{
+  "mallApp": {
+    "shopUser": {
+      "home": {
+        "title": "Shop Users",
+        "refreshListLabel": "Refresh list",
+        "createLabel": "Create a new Shop User",
+        "createOrEditLabel": "Create or edit a Shop User",
+        "search": "Search for Shop User",
+        "notFound": "No Shop Users found"
+      },
+      "created": "A new Shop User is created with identifier { param }",
+      "updated": "A Shop User is updated with identifier { param }",
+      "deleted": "A Shop User is deleted with identifier { param }",
+      "delete": {
+        "question": "Are you sure you want to delete Shop User { id }?"
+      },
+      "detail": {
+        "title": "Shop User"
+      },
+      "id": "ID",
+      "username": "Username",
+      "email": "Email",
+      "order": "Order",
+      "userProfile": "User Profile"
+    }
+  }
+}

@@ -34,7 +34,7 @@ management:
 spring:
   devtools:
     restart:
-      enabled: true
+      enabled: false
       additional-exclude: static/**
     livereload:
       enabled: false # we use Webpack dev server + BrowserSync for livereload
@@ -76,6 +76,7 @@ spring:
     # Remove 'faker' if you do not want the sample data to be loaded automatically
     contexts: dev, faker
   mail:
+    enabled: false
     host: localhost
     port: 25
     username:

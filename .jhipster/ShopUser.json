@@ -1,0 +1,44 @@
+{
+  "annotations": {
+    "changelogDate": "20250122034448"
+  },
+  "applications": "*",
+  "dto": "mapstruct",
+  "fields": [
+    {
+      "fieldName": "username",
+      "fieldType": "String",
+      "fieldValidateRules": ["required", "minlength", "maxlength"],
+      "fieldValidateRulesMaxlength": "100",
+      "fieldValidateRulesMinlength": "3"
+    },
+    {
+      "fieldName": "email",
+      "fieldType": "String",
+      "fieldValidateRules": ["required", "minlength", "maxlength"],
+      "fieldValidateRulesMaxlength": "255",
+      "fieldValidateRulesMinlength": "5"
+    }
+  ],
+  "name": "ShopUser",
+  "relationships": [
+    {
+      "otherEntityName": "order",
+      "otherEntityRelationshipName": "shopUser",
+      "relationshipName": "order",
+      "relationshipSide": "left",
+      "relationshipType": "one-to-many"
+    },
+    {
+      "options": {
+        "builtInEntity": true
+      },
+      "otherEntityName": "userProfile",
+      "otherEntityRelationshipName": "shopUser",
+      "relationshipName": "userProfile",
+      "relationshipSide": "right",
+      "relationshipType": "one-to-one"
+    }
+  ],
+  "service": "serviceClass"
+}

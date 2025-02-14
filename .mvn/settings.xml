@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<settings xmlns="http://maven.apache.org/SETTINGS/1.0.0"
+          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+          xsi:schemaLocation="http://maven.apache.org/SETTINGS/1.0.0 http://maven.apache.org/xsd/settings-1.0.0.xsd">
+
+    <!-- Local Repository -->
+    <!--localRepository>/path/to/local/repo</localRepository--> <!-- Optional: customize your local repository location -->
+
+    <!-- Mirrors -->
+    <mirrors>
+        <!-- Use Alibaba Cloud Maven Mirror for faster downloads -->
+        <mirror>
+			<id>aliyun-maven</id>
+			<mirrorOf>*</mirrorOf>
+			<name>Aliyun Maven</name>
+			<url>https://maven.aliyun.com/repository/public</url>
+		</mirror>
+        <!-- Optional: Add other mirrors if needed -->
+    </mirrors>
+
+    <!-- Proxies -->
+    <proxies>
+        <!-- Example Proxy Configuration (Uncomment and edit if needed) -->
+        <!--
+        <proxy>
+            <id>example-proxy</id>
+            <active>true</active>
+            <protocol>http</protocol>
+            <host>proxy.example.com</host>
+            <port>8080</port>
+            <username>proxyuser</username>
+            <password>somepassword</password>
+            <nonProxyHosts>www.google.com|*.example.com</nonProxyHosts>
+        </proxy>
+        -->
+    </proxies>
+
+    <!-- Servers -->
+    <servers>
+        <!-- Example for private Maven repository credentials (Uncomment and edit if needed) -->
+        <!--
+        <server>
+            <id>private-repo</id>
+            <username>your-username</username>
+            <password>your-password</password>
+        </server>
+        -->
+    </servers>
+
+    <!-- Profiles -->
+    <profiles>
+        <!-- Default Profile Configuration (Optional) -->
+        <profile>
+            <id>default</id>
+            <activation>
+                <activeByDefault>true</activeByDefault>
+            </activation>
+            <repositories>
+                <repository>
+                    <id>central</id>
+                    <url>https://repo.maven.apache.org/maven2</url>
+                </repository>
+            </repositories>
+            <pluginRepositories>
+                <pluginRepository>
+                    <id>central</id>
+                    <url>https://repo.maven.apache.org/maven2</url>
+                </pluginRepository>
+            </pluginRepositories>
+        </profile>
+    </profiles>
+
+    <!-- Active Profiles -->
+    <activeProfiles>
+        <activeProfile>default</activeProfile> <!-- Optional: Enable default profile -->
+    </activeProfiles>
+
+    <!-- Build Extensions -->
+    <!--build>
+        <extensions>
+            < Optional: If you are using a build extension, add it here >
+        </extensions>
+    </build-->
+
+    <!-- Mirrors for Additional Repositories -->
+    <!--repositories>
+        < You can add additional repositories here if needed >
+    </repositories-->
+</settings>

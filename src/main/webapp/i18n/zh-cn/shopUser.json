@@ -1,0 +1,28 @@
+{
+  "mallApp": {
+    "shopUser": {
+      "home": {
+        "title": "Shop Users",
+        "refreshListLabel": "Refresh list",
+        "createLabel": "创建新 Shop User",
+        "createOrEditLabel": "创建或编辑 Shop User",
+        "search": "查找 Shop User",
+        "notFound": "No Shop Users found"
+      },
+      "created": "Shop User { param } 创建成功",
+      "updated": "Shop User { param } 更新成功",
+      "deleted": "Shop User { param } 删除成功",
+      "delete": {
+        "question": "你确定要删除 Shop User { id } 吗？"
+      },
+      "detail": {
+        "title": "Shop User"
+      },
+      "id": "ID",
+      "username": "Username",
+      "email": "Email",
+      "order": "Order",
+      "userProfile": "User Profile"
+    }
+  }
+}

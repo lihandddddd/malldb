@@ -1,0 +1,62 @@
+// 枚举定义
+enum OrderStatus {
+  PENDING,
+  COMPLETED,
+  CANCELLED
+}
+
+// 实体定义
+entity ShopUser {
+  username String required minlength(3) maxlength(100)
+  email String required minlength(5) maxlength(255)
+}
+
+entity UserProfile {
+  phoneNumber String maxlength(15)
+  address String maxlength(255)
+}
+
+entity Product {
+  name String required minlength(3) maxlength(100)
+  description String maxlength(1000)
+  price BigDecimal required min(0)
+  stock Integer required min(0)
+}
+
+entity FlashSale {
+  name String required minlength(3) maxlength(100)
+  startTime ZonedDateTime required
+  endTime ZonedDateTime required
+  discountRate Float required min(0) max(1)
+  maxQuantity Integer required min(1)
+}
+
+entity Order {
+  orderDate ZonedDateTime required
+  totalAmount BigDecimal required min(0)
+  status OrderStatus required
+}
+
+// 关系定义
+relationship OneToOne {
+  UserProfile to ShopUser with builtInEntity
+}
+
+relationship OneToMany {
+  ShopUser to Order
+}
+
+relationship ManyToOne {
+  Order to Product
+}
+
+relationship ManyToOne {
+  Product to FlashSale
+}
+
+// DTO 和服务定义
+dto * with mapstruct
+service * with serviceClass
+
+// 前端分页
+paginate Product, FlashSale, Order with pagination

@@ -1,0 +1,30 @@
+{
+  "mallApp": {
+    "flashSale": {
+      "home": {
+        "title": "Flash Sales",
+        "refreshListLabel": "Refresh list",
+        "createLabel": "创建新 Flash Sale",
+        "createOrEditLabel": "创建或编辑 Flash Sale",
+        "search": "查找 Flash Sale",
+        "notFound": "No Flash Sales found"
+      },
+      "created": "Flash Sale { param } 创建成功",
+      "updated": "Flash Sale { param } 更新成功",
+      "deleted": "Flash Sale { param } 删除成功",
+      "delete": {
+        "question": "你确定要删除 Flash Sale { id } 吗？"
+      },
+      "detail": {
+        "title": "Flash Sale"
+      },
+      "id": "ID",
+      "name": "Name",
+      "startTime": "Start Time",
+      "endTime": "End Time",
+      "discountRate": "Discount Rate",
+      "maxQuantity": "Max Quantity",
+      "product": "Product"
+    }
+  }
+}

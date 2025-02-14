@@ -1,0 +1,30 @@
+{
+  "mallApp": {
+    "flashSale": {
+      "home": {
+        "title": "Flash Sales",
+        "refreshListLabel": "Refresh list",
+        "createLabel": "Create a new Flash Sale",
+        "createOrEditLabel": "Create or edit a Flash Sale",
+        "search": "Search for Flash Sale",
+        "notFound": "No Flash Sales found"
+      },
+      "created": "A new Flash Sale is created with identifier { param }",
+      "updated": "A Flash Sale is updated with identifier { param }",
+      "deleted": "A Flash Sale is deleted with identifier { param }",
+      "delete": {
+        "question": "Are you sure you want to delete Flash Sale { id }?"
+      },
+      "detail": {
+        "title": "Flash Sale"
+      },
+      "id": "ID",
+      "name": "Name",
+      "startTime": "Start Time",
+      "endTime": "End Time",
+      "discountRate": "Discount Rate",
+      "maxQuantity": "Max Quantity",
+      "product": "Product"
+    }
+  }
+}
