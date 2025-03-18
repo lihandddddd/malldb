@@ -89,4 +89,3 @@ npmw.cmd install --verbose
 使用 --userconfig 选项显式指定使用项目中的 .npmrc 文件。
 通过 npm config list 查看当前加载的配置，确认是否使用了正确的镜像源。
 如果依然存在问题，可以通过调试日志进一步排查问题。
-test
